@@ -17,4 +17,13 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\ProgrammingTechnologies\Dtos\" />
+    <Folder Include="Features\ProgrammingTechnologies\Commands\" />
+    <Folder Include="Features\ProgrammingTechnologies\Models\" />
+    <Folder Include="Features\ProgrammingTechnologies\Rules\" />
+    <Folder Include="Features\ProgrammingTechnologies\Queries\" />
+    <Folder Include="Features\ProgrammingTechnologies\Profiles\" />
+  </ItemGroup>
+
 </Project>

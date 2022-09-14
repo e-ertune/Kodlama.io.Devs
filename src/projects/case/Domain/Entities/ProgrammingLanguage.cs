@@ -5,8 +5,9 @@ namespace Domain.Entities
     public class ProgrammingLanguage : Entity
     {
         public string Name { get; set; } = null!;
+        public virtual ICollection<ProgrammingTechnology> ProgrammingTechnologies { get; set; }
 
-        public ProgrammingLanguage(int id, string name)
+        public ProgrammingLanguage(int id, string name) : this()
         {
             Id = id;
             Name = name;
@@ -14,7 +15,7 @@ namespace Domain.Entities
 
         public ProgrammingLanguage()
         {
-
+            ProgrammingTechnologies = new HashSet<ProgrammingTechnology>();
         }
     }
 }
